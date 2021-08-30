@@ -21,6 +21,8 @@ class Var(object):
     # To record start time of bot
     BOT_START_TIME = time.time()
 
+    FORCE_SUB = os.environ.get("FORCE_SUB", "") if os.environ.get("FORCE_SUB", "") else None
+
     # Genius Api From Here : https://genius.com/api-clients
     API = os.environ.get("GENIUS_API", None)
 
